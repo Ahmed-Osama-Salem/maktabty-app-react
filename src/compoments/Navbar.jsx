@@ -9,12 +9,12 @@ function Navbar (){
    }
     return<nav className="nav-bar">
       <h3>مكتبتى</h3>
-      <a  className="toggle-btn" onClick={slideNavbar}>
+      <span  className="toggle-btn" onClick={slideNavbar}>
         <span className="bar"></span>
         <span className="bar"></span>
         <span className="bar"></span>
         <span className="bar"></span>
-      </a>
+      </span>
       <div className="nav-links" ref={toggleUl}>
         <ul>
             <Link className="link-Style" to="books">الكتب</Link>
