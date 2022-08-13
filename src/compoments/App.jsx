@@ -24,7 +24,7 @@ function App () {
   },[])
 
   
-  return <BrowserRouter>
+  return <HashRouter>
    
      <Routes>
        <Route element={<Main saveBooks={saveBooks} bookData={bookData} />} path="/"/>
@@ -33,7 +33,7 @@ function App () {
        <Route element={<Contact/>} path="contact"/>
        <Route element={<AddBooks/>} path="add-books"/>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   
 }
 
