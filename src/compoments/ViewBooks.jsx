@@ -9,6 +9,7 @@ function ViewBooks ({bookData,setBookData}) {
   const navigateBack = useNavigate()
   function backToBooks () {
     navigateBack("/");
+    
   }
   //stop here remove one book from favorite
   function onRemove (id){

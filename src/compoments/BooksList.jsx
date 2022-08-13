@@ -5,27 +5,24 @@ import propTypes from "prop-types";
 import ReadMoreReact from 'read-more-react';
 
 
-function BookList ({data}){
+function BookList ({data,bookData}){
     const navigateToView = useNavigate();
-    const [arr,setArr] = useState([]);
+    const [arr,setArr] = useState(bookData);
 
     function addToLocal (id) {
     for(let i = 0; i < booksData.length; i++){
        if(i === id){
-       
+       console.log(i , id);
         setArr((perValue)=>{
           return [...perValue,booksData[i]]
         })
         localStorage.setItem("book",JSON.stringify(arr));
         data();
-        
         }
-        
       }
     }
-console.log(arr);
+
       function viewInfo () {
-        
         navigateToView("book-info");
       }
   

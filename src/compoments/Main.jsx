@@ -2,7 +2,7 @@ import React from "react";
 import BookList from "./BooksList";
 import Navbar from "./Navbar";
 
-function Main ({saveBooks}){
+function Main ({saveBooks,bookData}){
     return <section className="header" >
     <Navbar/>
         <div className="first-sec">
@@ -10,7 +10,7 @@ function Main ({saveBooks}){
             <p> مكتبتى هتساعدك  تلاقى  كل الكتب </p>
             
         </div>
-        <BookList data={saveBooks} />
+        <BookList data={saveBooks} bookData={bookData} />
     </section>
 }
 
