@@ -1,455 +1,455 @@
 * {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
-.nav-bar{
-    width: 100%;
-    box-sizing: border-box;
-    padding: 5px 0;
-    display: flex;
-    justify-content: space-between;
-    background-color: #171212f1;
-    color: aliceblue;
-    z-index: 2;
-    align-items: center;
+.nav-bar {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: #171212f1;
+  color: aliceblue;
+  z-index: 2;
+  align-items: center;
 }
 
-.nav-links{
-    width: 50%;
+.nav-links {
+  width: 50%;
 }
 
 .nav-bar ul {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row-reverse;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
 }
 
 .link-Style {
-    list-style-type: none;
-    text-decoration: none;
-    font-size: 1.2rem;
-    cursor: pointer;
-    font-family: "Cairo", sans-serif;
-    position: relative;
-    color: aliceblue;
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-family: "Cairo", sans-serif;
+  position: relative;
+  color: aliceblue;
 }
 
-.link-Style:hover{
-    filter: drop-shadow(0 0 0.5px white);
+.link-Style:hover {
+  filter: drop-shadow(0 0 0.5px white);
 }
 
 .link-Style::after {
-    content: "";
+  content: "";
   height: 3px;
   width: 0%;
   position: absolute;
-  background: #D50707;
+  background: #d50707;
   bottom: 0;
   left: 0;
   transition: 0.5s;
 }
 
 .link-Style:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 .nav-bar h3 {
-    font-size: 1.3rem;
-    margin-left: 10px;
-    font-family: "Cairo", sans-serif;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
+  font-size: 1.3rem;
+  margin-left: 10px;
+  font-family: "Cairo", sans-serif;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 
 .nav-bar h3:hover {
-    filter: drop-shadow(0 0 3px white);
+  filter: drop-shadow(0 0 3px white);
 }
 
-.toggle-btn{
-    position: absolute;
-    top: 0.75rem;
-    right: 1rem;
-    display: none;
-    justify-content: space-between;
-    flex-direction: column;
-    width: 30px;
-    height: 20px;
+.toggle-btn {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 30px;
+  height: 20px;
 }
 
 .toggle-btn .bar {
-    height: 3px;
-    width: 100%;
-    background-color: aliceblue;
-    border-radius: 10px;
+  height: 3px;
+  width: 100%;
+  background-color: aliceblue;
+  border-radius: 10px;
 }
 
-.first-sec{
-    background-image: url(images/slide-2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 100vh;
+.first-sec {
+  background-image: url(images/slide-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
 }
 
 .first-sec h1 {
-    text-align: center;
-    color: aliceblue;
-    font-family: "Cairo", sans-serif;
-    font-size: 100px;
-    padding-top: 10%;
+  text-align: center;
+  color: aliceblue;
+  font-family: "Cairo", sans-serif;
+  font-size: 100px;
+  padding-top: 10%;
 }
 
 .first-sec p {
-    text-align: center;
-    color: aliceblue;
-    font-family: "Cairo", sans-serif;
-    font-size: 35px;
-    background-color: #2b272760;
+  text-align: center;
+  color: aliceblue;
+  font-family: "Cairo", sans-serif;
+  font-size: 35px;
+  background-color: #2b272760;
 }
 
 .book-card {
-    border: 2px solid balck;
-    background-color: #171212;
-    width: 100%;
-    height: auto;
+  border: 2px solid balck;
+  background-color: #171212;
+  width: 100%;
+  height: auto;
 }
 
 .book-card h2 {
-    text-align: center;
-    color: aliceblue;
-    font-family: "Cairo", sans-serif;
-    font-size: 45px;
+  text-align: center;
+  color: aliceblue;
+  font-family: "Cairo", sans-serif;
+  font-size: 45px;
 }
 
 .single-book {
-    width: 25%;
-    background-color: rgb(243, 241, 237);
-    text-align: center;
-    margin: 100px 20px;
-    padding: 10px;
-    flex-grow: 1;
-    border-radius: 10px;
-    transition: 0.5s ease-in-out;
-    filter: drop-shadow(0 0 2px black);
-    font-family: 'Righteous', cursive;
-    cursor: pointer;
+  width: 25%;
+  background-color: rgb(243, 241, 237);
+  text-align: center;
+  margin: 100px 20px;
+  padding: 10px;
+  flex-grow: 1;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+  filter: drop-shadow(0 0 2px black);
+  font-family: "Righteous", cursive;
+  cursor: pointer;
 }
 .single-book:hover {
   transform: scale(1.05);
 }
 
 .single-book h3 {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 
 .single-book p {
-    margin: 8px 0;
+  margin: 8px 0;
 }
 
-.flex-book{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    
+.flex-book {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .btn-style {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .btn2 {
-    width: 150px;
-    padding: 5px;
-    font-size: 20px;
-    text-decoration: none;
-    font-family: "Cairo", sans-serif;
-    box-shadow: inset 0 0 0 0 #d50707;
-    transition: ease-out 0.3s;
-    border-radius: 4px;
-    outline: none;
-    cursor: pointer;
-    border-style: solid;
-    margin:  0 10px;
-    color: black;
-  }
-  
-  .btn2:hover {
-    box-shadow: inset 150px 0 0 0 #d50707;
-    color: antiquewhite;
-  }
+  width: 150px;
+  padding: 5px;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: "Cairo", sans-serif;
+  box-shadow: inset 0 0 0 0 #d50707;
+  transition: ease-out 0.3s;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  border-style: solid;
+  margin: 0 10px;
+  color: black;
+}
 
-  .book-view {
+.btn2:hover {
+  box-shadow: inset 150px 0 0 0 #d50707;
+  color: antiquewhite;
+}
+
+.book-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  font-family: "Righteous", cursive;
+  margin-bottom: 50px;
+}
+
+.fav-book {
+  width: 80%;
+  margin-top: 50px;
+  background-color: bisque;
+  border-radius: 8px;
+  filter: drop-shadow(0 0 2px gray);
+}
+
+.fav-book p {
+  padding: 0 5%;
+  margin: 2% 0;
+}
+
+.btn3 {
+  width: 200px;
+  padding: 5px;
+  font-size: 20px;
+  font-family: "Cairo", sans-serif;
+  box-shadow: inset 0 0 0 0 #d50707;
+  transition: ease-out 0.3s;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  border-style: solid;
+  margin-top: 20px;
+}
+
+.btn3:hover {
+  box-shadow: inset 200px 0 0 0 #d50707;
+  color: antiquewhite;
+}
+
+.contact-page {
+  width: 100%;
+  height: 100vh;
+  background-color: whitesmoke;
+  margin-top: 10px;
+}
+
+.contact-form {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.contact-form input {
+  width: 400px;
+  height: 25px;
+  background: #171212;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  margin: 15px 0;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  font-family: "Cairo", sans-serif;
+  text-align: right;
+}
+
+.contact-form input:focus {
+  background: #352d2d;
+}
+
+.contact-form label {
+  font-size: 20px;
+  font-family: "Cairo", sans-serif;
+  text-align: right;
+}
+
+.contact-form textarea {
+  width: 400px;
+  margin-bottom: 20px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #171212;
+  color: aliceblue;
+  font-size: 20px;
+  font-family: "Cairo", sans-serif;
+  text-align: right;
+  padding: 10px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.link-single {
+  text-decoration: none;
+  color: #d50707;
+  font-size: 20px;
+  font-family: "Cairo", sans-serif;
+  transition: 0.3s ease-in-out;
+}
+
+.link-single:hover {
+  color: aliceblue;
+}
+
+.add-books {
+  width: 100%;
+  height: auto;
+  background-color: #171212;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.add-books h1 {
+  color: aliceblue;
+  font-size: 30px;
+  font-family: "Cairo", sans-serif;
+  text-align: center;
+  padding: 15px 0;
+  margin-bottom: 20px;
+  background-color: #d50707;
+  width: 40%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.add-books form {
+  width: 60%;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 30px auto;
+  text-align: right;
+}
+
+.add-books input {
+  font-size: 15px;
+  text-align: right;
+  font-family: "Cairo", sans-serif;
+  padding: 5px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin: 15px 10px;
+}
+
+.add-books label {
+  font-family: "Cairo", sans-serif;
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.book-new {
+  width: 400px;
+  height: 400px;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  margin: 20px 200px;
+  text-align: left;
+  padding: 10px;
+}
+
+.book-new img {
+  width: 400px;
+  height: 200px;
+  filter: drop-shadow(0 0 2px gray);
+  border-radius: 5px;
+}
+
+.flex-books {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.book-new h2 {
+  text-align: left;
+  color: rgb(206, 30, 30);
+  font-family: "Cairo", sans-serif;
+  font-size: 35px;
+}
+
+.book-new p {
+  font-size: 20px;
+  font-family: "Cairo", sans-serif;
+}
+
+.book-view h3 {
+  color: rgb(206, 30, 30);
+  font-family: "Cairo", sans-serif;
+  font-size: 25px;
+}
+
+/* responsive for mobile */
+
+@media only screen and (max-device-width: 600px) {
+  .toggle-btn {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column-reverse;
-    font-family: 'Righteous', cursive;
-    margin-bottom: 50px;
-    
   }
 
-  .fav-book {
-    width: 80%;
-    margin-top: 50px;
-    background-color: bisque;
-    border-radius: 8px;
-    filter: drop-shadow(0 0 2px gray);
-  }
-
-  .fav-book p {
-    padding: 0 5% ;
-    margin: 2% 0;
-  }
-
-  .btn3 {
-    width: 200px;
-    padding: 5px;
-    font-size: 20px;
-    font-family: "Cairo", sans-serif;
-    box-shadow: inset 0 0 0 0 #d50707;
-    transition: ease-out 0.3s;
-    border-radius: 4px;
-    outline: none;
-    cursor: pointer;
-    border-style: solid;
-    margin-top: 20px;
-  }
-  
-  .btn3:hover {
-    box-shadow: inset 200px 0 0 0 #d50707;
-    color: antiquewhite;
-  }
-
-  .contact-page {
+  .nav-links {
+    display: none;
     width: 100%;
-    height: 100vh;
-    background-color: whitesmoke;
-    margin-top: 10px;
-  }
-
-  .contact-form {
-    width: 70%;
-    height: 100%;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-direction: column;
-    margin: 0 auto;
-  }
-
-  .contact-form input{
-    width: 400px;
-    height: 25px;
-    background: #171212;
-    outline: none;
-    border: none;
-    border-radius: 4px;
-    margin:15px 0;
-    color: white;
-    padding: 10px;
-    font-size: 20px;
-    font-family: "Cairo", sans-serif;
-    text-align: right;
-  }
-
-  .contact-form input:focus{
-    background: #352d2d;
-  }
-
-  .contact-form label {
-    font-size: 20px;
-    font-family: "Cairo", sans-serif;
-    text-align: right;
-  }
-
-  .contact-form textarea {
-    width: 400px;
-    margin-bottom: 20px;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    background-color: #171212;
-    color: aliceblue;
-    font-size: 20px;
-    font-family: "Cairo", sans-serif;
-    text-align: right;
-    padding: 10px;
-  }
-
-  .links {
-    display: flex;
-    justify-content: space-around;
-    
-  }
-
-  .link-single {
-    text-decoration: none;
-    color: #D50707;
-    font-size: 20px;
-    font-family: "Cairo", sans-serif;
     transition: 0.3s ease-in-out;
   }
 
-  .link-single:hover{
-    color: aliceblue;
+  .nav-bar ul {
+    flex-direction: column;
+    padding: 0 10px;
+    width: 100%;
   }
 
-  .add-books {
+  .nav-bar {
     width: 100%;
-    height: auto;
-    background-color: #171212;
-    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .link-Style {
     text-align: center;
+    margin: 10px 0;
+  }
+  .nav-links.active {
+    display: flex;
+    transition: 0.3s ease-in-out;
+  }
+
+  .flex-book {
+    display: block;
+    width: 100%;
+  }
+
+  .single-book {
+    width: 80%;
+    margin: 50px auto;
+  }
+
+  .contact-form {
+    margin: 70px auto;
+  }
+
+  .contact-form input {
+    width: 300px;
+  }
+
+  .contact-form textarea {
+    width: 300px;
+  }
+
+  .btn2 {
+    margin: 5px 5px;
   }
 
   .add-books h1 {
-    color: aliceblue;
-    font-size: 30px;
-    font-family: "Cairo", sans-serif;
-    text-align: center;
-    padding: 15px 0;
-    margin-bottom: 20px;
-    background-color: #D50707;
-    width: 40%;
-    margin: 0 auto;
-    border-radius: 10px;
+    width: 80%;
   }
-
-  .add-books form {
-    width: 60%;
-    color: aliceblue;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 30px auto;
-    text-align: right;
-    
-  }
-
-  .add-books input {
-    font-size: 15px;
-    text-align: right;
-    font-family: "Cairo", sans-serif;
-    padding: 5px;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    margin: 15px 10px;
-  }
-
-  .add-books label {
-    font-family: "Cairo", sans-serif;
-    margin-top: 5px;
-    font-size: 20px;
-  }
-
-  .book-new {
-    width: 400px;
-    height: 400px;
-    background-color: antiquewhite;
-    border-radius: 10px;
-    margin: 20px 200px;
-    text-align: left;
-    padding: 10px;
-  }
-
-  .book-new img{
-    width: 400px;
-    height: 200px;
-    filter: drop-shadow(0 0 2px gray);
-    border-radius: 5px;
-  }
-
-  .flex-books {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 50px;
-  }
-
-  .book-new h2 {
-    text-align: left;
-    color: rgb(206, 30, 30);
-    font-family: "Cairo", sans-serif;
-    font-size: 35px;
-  }
-
-  .book-new p {
-    font-size: 20px;
-    font-family: "Cairo", sans-serif;
-  }
-
-  /* responsive for mobile */
-
-  @media only screen and (max-device-width:600px) {
-    .toggle-btn {
-        display: flex;
-    }
-    
-    .nav-links {
-        display: none;
-        width: 100%;
-        transition: 0.3s ease-in-out;
-    }
-
-    .nav-bar ul {
-        flex-direction: column;
-        padding: 0 10px;
-        width: 100%;
-        
-    }
-
-    .nav-bar {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .link-Style{
-        text-align: center;
-        margin: 10px 0;
-    }
-    .nav-links.active {
-        display: flex;
-        transition: 0.3s ease-in-out;
-    }
-
-    .flex-book{
-        display: block;
-        width: 100%;
-       
-    }
-
-    .single-book{
-        width: 80%;
-        margin: 50px auto;
-    }
-
-    .contact-form {
-        margin: 70px auto;
-    }
-
-    .contact-form input{
-      width: 300px;
-    }
-    
-    .contact-form textarea {
-        width: 300px;
-    }
-
-    .btn2 {
-        margin: 5px 5px;
-    }
-
-    .add-books h1 {
-        width: 80%;
-    }
-  }
+}
