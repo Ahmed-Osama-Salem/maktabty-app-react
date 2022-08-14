@@ -4,10 +4,12 @@ import { booksData } from "../books";
 
 function AddBooks() {
   const [text, setText] = useState({
-    bookTitle: "",
-    bookAuthor: "",
-    bookDisc: "",
-    bookData: "",
+    thumbnailUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT538yXb7RXLfxcjMmO07mnzD1v3XuNqlxy3w&usqp=CAU",
+    title: "",
+    authors: "",
+    shortDescription: "",
+    pageCount: "",
   });
   const [bookAdd, setBookAdd] = useState([]);
 
@@ -27,19 +29,18 @@ function AddBooks() {
     booksData.unshift(text);
   };
 
-  console.log(booksData);
   return (
     <div className="add-books">
       <h1>تقدر تضيف كتابك ضمن مجموعة مكتبتى</h1>
       <form onSubmit={handelSubmit}>
         <label>اسم الكتاب</label>
-        <input type="text" onChange={handelInputs} name=" bookTitle" />
+        <input type="text" onChange={handelInputs} name="title" />
         <label>اسم المؤلف</label>
-        <input type="text" onChange={handelInputs} name="bookAuthor" />
+        <input type="text" onChange={handelInputs} name="authors" />
         <label>وصف الكتاب</label>
-        <input type="text" onChange={handelInputs} name="bookDisc" />
-        <label>تاريخ اصدار الكتاب</label>
-        <input type="text" onChange={handelInputs} name="bookData" />
+        <input type="text" onChange={handelInputs} name="shortDescription" />
+        <label>عدد الصفح</label>
+        <input type="text" onChange={handelInputs} name="pageCount" />
         <button className="btn2" type="submit">
           اضافة كتاب
         </button>
@@ -51,14 +52,11 @@ function AddBooks() {
         {bookAdd.map((newBook) => {
           return (
             <div className="book-new">
-              <img
-                alt="book"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpbJuy6d3MzgFt_8fyEV2FlhtQX6Ej542D5Wseoa3NSH5BGMJxHf-JnWz9nSRpgqMfTgg&usqp=CAU"
-              />
-              <h2>title : {newBook.bookTitle} </h2>
-              <p>Author: {newBook.bookAuthor} </p>
-              <p>discription : {newBook.bookDisc}</p>
-              <p>year : {newBook.bookData} </p>
+              <img alt="book" src={newBook.thumbnailUrl} />
+              <h2>title : {newBook.title} </h2>
+              <p>Author: {newBook.authors} </p>
+              <p>discription : {newBook.shortDescription}</p>
+              <p>pages : {newBook.pageCount} </p>
             </div>
           );
         })}

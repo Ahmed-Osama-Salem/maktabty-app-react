@@ -66,7 +66,7 @@ function SingleBook(props) {
       <p>author : {props.bookAuthor}</p>
       <p>page count : {props.bookPage} pages</p>
       <ReadMoreReact text={props.bookDis} />
-      <p>{props.id}</p>
+      <p>{props.id + 1}</p>
       <div className="btn-style">
         <button
           className="btn2"
