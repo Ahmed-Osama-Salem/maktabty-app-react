@@ -6,7 +6,7 @@ function FavoriteBooks(props) {
       <img src={props.favImg} alt="fav" />
 
       <h2>
-        {props.id} - {props.favTitle}
+        {props.id + 1} - {props.favTitle}
       </h2>
       <p>{props.favDis}</p>
       <p>authors : {props.favAut}</p>

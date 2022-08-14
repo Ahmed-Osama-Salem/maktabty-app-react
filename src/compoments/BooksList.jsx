@@ -34,6 +34,7 @@ function BookList({ data, bookData }) {
         <Link className="link-single" to="/book-info">
           المفضلة
         </Link>
+        <span>{bookData.length}</span>
       </div>
       <div className="flex-book">
         {booksData.map((book, index) => {
