@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/maktabty-app-react/static/js/main.81c225e6.js",
+    "main.js": "/maktabty-app-react/static/js/main.f8745035.js",
     "index.html": "/maktabty-app-react/index.html",
-    "main.81c225e6.js.map": "/maktabty-app-react/static/js/main.81c225e6.js.map"
+    "main.f8745035.js.map": "/maktabty-app-react/static/js/main.f8745035.js.map"
   },
   "entrypoints": [
-    "static/js/main.81c225e6.js"
+    "static/js/main.f8745035.js"
   ]
 }
