@@ -386,6 +386,14 @@
   color: rgb(206, 30, 30);
   font-family: "Cairo", sans-serif;
   font-size: 25px;
+  text-align: center;
+}
+
+.book-card h3 {
+  color: rgb(206, 30, 30);
+  font-family: "Cairo", sans-serif;
+  font-size: 25px;
+  text-align: center;
 }
 
 /* responsive for mobile */
