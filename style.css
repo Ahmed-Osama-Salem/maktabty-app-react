@@ -483,12 +483,24 @@
   }
 
   .book-new {
-    width: 50%;
-    height: 400px;
+    width: 70%;
+    height: auto;
     background-color: antiquewhite;
     border-radius: 10px;
     margin: 20px 200px;
     text-align: left;
     padding: 10px;
+  }
+
+  .book-new h2 {
+    text-align: left;
+    color: rgb(206, 30, 30);
+    font-family: "Cairo", sans-serif;
+    font-size: 23px;
+  }
+
+  .book-new p {
+    font-size: 18px;
+    font-family: "Cairo", sans-serif;
   }
 }
