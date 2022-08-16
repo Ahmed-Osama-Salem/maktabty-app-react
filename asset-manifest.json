@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/maktabty-app-react/static/css/main.3d10672c.css",
-    "main.js": "/maktabty-app-react/static/js/main.8bb0b4eb.js",
+    "main.js": "/maktabty-app-react/static/js/main.cd07f934.js",
     "index.html": "/maktabty-app-react/index.html",
     "main.3d10672c.css.map": "/maktabty-app-react/static/css/main.3d10672c.css.map",
-    "main.8bb0b4eb.js.map": "/maktabty-app-react/static/js/main.8bb0b4eb.js.map"
+    "main.cd07f934.js.map": "/maktabty-app-react/static/js/main.cd07f934.js.map"
   },
   "entrypoints": [
     "static/css/main.3d10672c.css",
-    "static/js/main.8bb0b4eb.js"
+    "static/js/main.cd07f934.js"
   ]
 }
