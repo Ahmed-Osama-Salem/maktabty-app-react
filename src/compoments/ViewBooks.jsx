@@ -1,8 +1,11 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import FavoriteBooks from "./FavoriteBooks";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function ViewBooks({ bookData, setBookData }) {
+  const notify = (boo) => toast(boo + "" + "تم حذف كتاب ");
   const navigateBack = useNavigate();
   function backToBooks() {
     navigateBack("/");
@@ -13,6 +16,7 @@ function ViewBooks({ bookData, setBookData }) {
     const filter = bookData.filter((book, index) => {
       return index !== id;
     });
+    notify(bookData[id].title);
     setBookData(filter);
     localStorage.book = JSON.stringify(bookData);
   }
@@ -48,6 +52,7 @@ function ViewBooks({ bookData, setBookData }) {
           />
         );
       })}
+      <ToastContainer autoClose={2000} />
     </div>
   );
 }

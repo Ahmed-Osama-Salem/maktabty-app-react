@@ -7,8 +7,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function BookList({ data, bookData }) {
-  const notify = () =>
-    toast("تم اضافة عدد" + " " + bookData.length + " " + "كتب");
+  const notify = (b) => toast(b + " " + "تم اضافة كتاب");
   const navigateToView = useNavigate();
 
   //function that save books in array and localStorage
@@ -20,7 +19,7 @@ function BookList({ data, bookData }) {
         console.log(arr);
         localStorage.setItem("book", JSON.stringify(arr));
         data();
-        notify();
+        notify(booksData[i].title);
       }
     }
   }
