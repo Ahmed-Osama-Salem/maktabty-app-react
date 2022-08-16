@@ -3,14 +3,19 @@ import { Link, useNavigate } from "react-router-dom";
 import { booksData } from "../books";
 import propTypes from "prop-types";
 import ReadMoreReact from "read-more-react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function BookList({ data, bookData }) {
+  const notify = () =>
+    toast("تم اضافة عدد" + " " + bookData.length + " " + "كتب");
   const navigateToView = useNavigate();
   //function that save books in array and localStorage
   const arr = bookData;
   function addToLocal(id) {
     for (let i = 0; i < booksData.length; i++) {
       if (i === id) {
+        notify();
         arr.push(booksData[i]);
         console.log(arr);
         localStorage.setItem("book", JSON.stringify(arr));
@@ -53,6 +58,7 @@ function BookList({ data, bookData }) {
             />
           );
         })}
+        <ToastContainer autoClose={2000} />
       </div>
     </div>
   );
