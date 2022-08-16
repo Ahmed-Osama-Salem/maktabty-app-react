@@ -10,16 +10,17 @@ function BookList({ data, bookData }) {
   const notify = () =>
     toast("تم اضافة عدد" + " " + bookData.length + " " + "كتب");
   const navigateToView = useNavigate();
+
   //function that save books in array and localStorage
   const arr = bookData;
   function addToLocal(id) {
     for (let i = 0; i < booksData.length; i++) {
       if (i === id) {
-        notify();
         arr.push(booksData[i]);
         console.log(arr);
         localStorage.setItem("book", JSON.stringify(arr));
         data();
+        notify();
       }
     }
   }
